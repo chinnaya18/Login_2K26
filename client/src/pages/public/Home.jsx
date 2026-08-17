@@ -5,6 +5,7 @@ import { Button } from '../../components/ui/Button';
 import { CountdownTimer } from '../../components/ui/CountdownTimer';
 import { Hero2DVisual } from '../../components/ui/Hero2DVisual';
 import { useAuthStore } from '../../store/authStore';
+import { ThreeBackground } from '../../components/ThreeBackground';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,7 +24,10 @@ const Home = () => {
     <div className="bg-bg-primary min-h-screen text-white">
       {/* Hero Section */}
       <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden -mt-20">
-        
+
+        {/* Three.js animated background */}
+        <ThreeBackground />
+
         {/* Scanlines overlay for the entire section */}
         <div className="absolute inset-0 bg-[url('/scanlines.png')] opacity-10 mix-blend-overlay pointer-events-none z-10" />
 

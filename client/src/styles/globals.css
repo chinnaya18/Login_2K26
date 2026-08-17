@@ -2,6 +2,43 @@
 @import "tailwindcss";
 @import "./variables.css";
 
+/* ── Tailwind v4 @theme: maps CSS vars → utility classes ─────────────────
+   Enables: bg-bg-primary, text-color-red, border-border-color, etc.
+──────────────────────────────────────────────────────────────────────── */
+@theme {
+  /* Surfaces */
+  --color-bg-primary:     #0A0607;
+  --color-bg-secondary:   #130C0E;
+  --color-bg-card:        #1A1114;
+  --color-bg-sunken:      #070405;
+
+  /* Borders */
+  --color-border-color:   #2A1A1D;
+  --color-border-strong:  #3E2529;
+  --color-border-hot:     #5C1116;
+
+  /* Red ladder */
+  --color-color-red:        #E01B22;
+  --color-color-red-bright: #FF2A2A;
+  --color-color-red-mid:    #B4111A;
+  --color-color-red-deep:   #7E0910;
+  --color-color-red-oxblood:#4A050A;
+  --color-color-danger:     #FF2A2A;
+  --color-color-silver:     #A79798;
+  --color-color-amber:      #E08A17;
+
+  /* Text */
+  --color-text-primary:   #F7F2F2;
+  --color-text-secondary: #A79798;
+  --color-text-muted:     #A79798;
+  --color-text-faint:     #6B5A5C;
+
+  /* Fonts */
+  --font-display: 'Orbitron', 'Chakra Petch', sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+}
+
 @layer base {
   body {
     background-color: var(--void);
